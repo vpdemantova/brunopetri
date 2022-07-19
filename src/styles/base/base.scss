@@ -1,0 +1,22 @@
+@use "../utils/" as *;
+
+html {
+  font-family: $font-syne;
+  font-size: calc(100vw / 1280 * 10);
+  overflow: hidden;
+
+  @include media('<=phone') {
+    font-size: calc(100vw / 375 * 10);
+  }
+}
+
+body {
+  color: $color-white;
+  background: $color-white;
+}
+
+.app {
+  position: relative;
+  z-index: z('app');
+  z-index: 1;
+}

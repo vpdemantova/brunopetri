@@ -1,0 +1,9 @@
+@use "../utils/" as *;
+
+.lothus {
+  font-family: $font-syne;
+}
+
+.lothus__wrapper {
+  @extend %cover;
+}

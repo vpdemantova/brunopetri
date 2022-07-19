@@ -1,0 +1,38 @@
+@use "../utils/" as *;
+
+.menu {
+  
+}
+
+.menu__wrapper {
+
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu__item {
+  font-size: 2.8rem;
+  color: $color-black;
+  background: $color-white;
+  padding: 1rem 2.8rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 2px solid $color-black;
+  border-radius: 1.8rem;
+  transition: 450ms cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &--active {
+    color: $color-black;
+    background: $color-white;
+  }
+
+  &:hover {
+    color: $color-white;
+    background: $color-black;
+  }
+}
