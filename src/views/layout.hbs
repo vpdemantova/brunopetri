@@ -29,18 +29,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <title>Lothus boilerplate</title>
+    <title>Bruno Petri - Art</title>
   </head>
   <body>
     {{> navigation/menu }}
 
-    {{> components/cursor }}
+    {{!-- {{> components/cursor }} --}}
 
     <div class="app" data-template="{{ template }}">
       {{> @partial-block }}
     </div>
 
-    {{> navigation/footer }}
+    {{!-- {{> navigation/footer }} --}}
 
     <script type="module" src="{{resolve-from-root '../app/main.js'}}"></script>
   </body>

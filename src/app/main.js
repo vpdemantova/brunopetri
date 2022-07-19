@@ -2,13 +2,15 @@ import '../styles/index.scss';
 
 import Cursor from './components/Cursor';
 
-import AboutScene from './scenes/About';
 import HomeScene from './scenes/Home';
-import LothusScene from './scenes/Lothus';
+import GalleryScene from './scenes/Gallery';
+import StoreScene from './scenes/Store';
+import AboutScene from './scenes/About';
 
-import AboutPage from './pages/About';
 import HomePage from './pages/Home';
-import LothusPage from './pages/Lothus';
+import GalleryPage from './pages/Gallery';
+import StorePage from './pages/Store';
+import AboutPage from './pages/About';
 
 import Application from './classes/App';
 
@@ -29,14 +31,19 @@ const routes = [
     template: 'home',
   },
   {
+    component: GalleryPage,
+    scene: GalleryScene,
+    template: 'gallery',
+  },
+  {
+    component: StorePage,
+    scene: StoreScene,
+    template: 'store',
+  },
+  {
     component: AboutPage,
     scene: AboutScene,
     template: 'about',
-  },
-  {
-    component: LothusPage,
-    scene: LothusScene,
-    template: 'lothus',
   },
 ];
 

@@ -2,12 +2,12 @@ import GSAP from 'gsap';
 
 import Page from '@/classes/Page';
 
-export default class LothusPage extends Page {
+export default class GalleryPage extends Page {
   constructor() {
     super({
-      element: '.lothus',
+      element: '.gallery',
       elements: {
-        media: '.lothus__media__image',
+        media: '.gallery__media__image',
       },
     });
   }
@@ -22,10 +22,13 @@ export default class LothusPage extends Page {
       this.element,
       {
         autoAlpha: 0,
+        x: '1900',
       },
       {
         autoAlpha: 1,
-        duration: 0.4,
+        x: '0',
+        duration: 1,
+        ease: 'power2.out',
       }
     );
 

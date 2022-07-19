@@ -35,10 +35,13 @@ export default class HomePage extends Page {
       this.element,
       {
         autoAlpha: 0,
+        x: -900,
       },
       {
         autoAlpha: 1,
-        duration: 0.4,
+        x: 0,
+        duration: 1,
+        ease: 'power2.out',
       }
     );
 

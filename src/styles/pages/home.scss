@@ -9,13 +9,24 @@
 }
 
 .home__card {
-
+  background: $color-black;
+  border-radius: 0 2rem 2rem 0;
+  width: 96rem;
+  height: 100%;
+  padding: 5.2rem 18rem 5.2rem 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .home__title {
-
+  font-size: 24rem;
+  line-height: 0.8;
 }
 
 .home__description {
-
+  font-size: 2.6rem;
+  margin-top: 4rem;
+  color: #9A9A9A;
+  line-height: 1.4;
+  padding-left: 1.3rem;
 }

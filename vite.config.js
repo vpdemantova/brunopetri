@@ -30,8 +30,9 @@ export default async ({ mode }) => {
   // Static Pages
   const input = {
     main: resolve('src/pages/index.html'),
+    gallery: resolve('src/pages/gallery/index.html'),
+    store: resolve('src/pages/store/index.html'),
     about: resolve('src/pages/about/index.html'),
-    lothus: resolve('src/pages/lothus/index.html'),
   };
 
   // Dynamic Router

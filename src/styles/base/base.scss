@@ -2,7 +2,7 @@
 
 html {
   font-family: $font-syne;
-  font-size: calc(100vw / 1280 * 10);
+  font-size: calc(100vw / 1920 * 10);
   overflow: hidden;
 
   @include media('<=phone') {
@@ -19,4 +19,12 @@ body {
   position: relative;
   z-index: z('app');
   z-index: 1;
+}
+
+html, body, .app,
+.home, .home__wrapper,
+.gallery, .gallery__wrapper,
+.store, .store__wrapper,
+.about, .about__wrapper {
+  height: 100%;
 }

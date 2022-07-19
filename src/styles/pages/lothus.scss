@@ -1,9 +1,21 @@
 @use "../utils/" as *;
 
-.lothus {
+.gallery {
   font-family: $font-syne;
 }
 
-.lothus__wrapper {
-  @extend %cover;
+.gallery__wrapper {
+  height: 100%;
+}
+
+.gallery__card {
+  position: absolute;
+  right: 0;
+  background: $color-black;
+  border-radius: 2rem 0 0 2rem;
+  width: 96rem;
+  height: 100%;
+  padding: 5.2rem 9rem 5.2rem 3rem;
+  display: flex;
+  flex-direction: column;
 }
