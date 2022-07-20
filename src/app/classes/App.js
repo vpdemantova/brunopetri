@@ -17,6 +17,7 @@ export default class App {
   initContainer () {
     this.content = document.querySelector('.app')
     this.template = this.content.getAttribute('data-template')
+    // console.log('App.js', this.template)
 
     if (!this.template) {
       console.warn('The attribute `data-template` in `.app` element is required for the application to run properly.')

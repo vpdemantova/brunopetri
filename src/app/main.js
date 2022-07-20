@@ -1,6 +1,7 @@
 import '../styles/index.scss';
 
 import Cursor from './components/Cursor';
+import Menu from './components/Menu';
 
 import HomeScene from './scenes/Home';
 import GalleryScene from './scenes/Gallery';
@@ -19,6 +20,9 @@ const App = new Application();
 const components = [
   {
     component: Cursor,
+  },
+  {
+    component: Menu,
   },
 ];
 

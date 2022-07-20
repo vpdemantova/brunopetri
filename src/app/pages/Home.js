@@ -68,6 +68,8 @@ export default class HomePage extends Page {
     this.timelineOut.to(this.element, {
       autoAlpha: 0,
       duration: 0.4,
+      x: -900,
+      ease: 'power2.out',
     });
 
     return super.hide(this.timelineOut);
